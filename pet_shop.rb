@@ -10,7 +10,7 @@ end
 
 #3 and 4 finally done
 def add_or_remove_cash(shop, sum)
- shop[:admin][:total_cash] += sum
+  shop[:admin][:total_cash] += sum
 end
 
 #5 done
@@ -20,7 +20,7 @@ end
 
 #6 done
 def increase_pets_sold(shop, amount)
-shop[:admin][:pets_sold] += amount
+  shop[:admin][:pets_sold] += amount
 end
 
 #7 done
@@ -45,7 +45,7 @@ def pets_by_breed(shop, breed)
   pets_found = []
   pets_array = shop[:pets]
   for pet in pets_array
-     pet[:breed]== breed ? pets_found.push(pet) : (return pets_found)
+    pet[:breed]== breed ? pets_found.push(pet) : (return pets_found)
   end
 end
 
@@ -62,7 +62,7 @@ end
 #12
 def remove_pet_by_name(shop, pet_name)
   for pet in shop[:pets]
-     pet[:name]== pet_name ? shop[:pets].delete(pet): nil
+    pet[:name]== pet_name ? shop[:pets].delete(pet): nil
   end
 end
 
@@ -93,7 +93,7 @@ def add_pet_to_customer(customer, pet)
 end
 #18 and 19 and 20 done
 def customer_can_afford_pet(customer, pet)
-    customer[:cash] >= pet[:price] ? true : false
+  customer[:cash] >= pet[:price] ? true : false
 end
 
 #21 and 22 and 23 doesnt work 100%
